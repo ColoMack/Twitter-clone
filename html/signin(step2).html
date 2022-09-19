@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/syles.css">
+    <title>Twitter/Signup page</title>
+</head>
+<body>
+    <div class="background">
+        <div style="gap:1.5rem; margin-top:1.5%;" class="boxLogin">
+            <div style="margin:0; margin-right:14rem; gap:1rem; display:flex; align-items:center; flex-direction:row; width:10rem; border:none">
+                <a href="/html/signin.html"><svg style="width:20px; cursor:pointer; height:20px;" viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-z80fyv r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-19wmn03"><g><path d="M13.414 12l5.793-5.793c.39-.39.39-1.023 0-1.414s-1.023-.39-1.414 0L12 10.586 6.207 4.793c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414L10.586 12l-5.793 5.793c-.39.39-.39 1.023 0 1.414.195.195.45.293.707.293s.512-.098.707-.293L12 13.414l5.793 5.793c.195.195.45.293.707.293s.512-.098.707-.293c.39-.39.39-1.023 0-1.414L13.414 12z"></path></g></svg></a>
+                <p style="font-size:130%; font-weight:500;">Step 2 of 3</p>
+            </div>          
+            <a style="cursor:pointer;" href="/html/index.html"><img style="height:30px; width:30px;" src="/images/twitterBird(blue).png"></a>
+            <h1 style="margin:0; font-size:170%">Finish setting up your account</h1>
+            <input id="location" type="text" placeholder="Location">
+            <input id="website" type="text" placeholder="Website">
+            <label style="font-size:80%; color:#acacac; margin-bottom:-1rem; margin-top:0.5rem; margin-left:1.5rem;" for="bio">Enter what you want to put as your bio under your account.</label>
+            <textarea id="bio" style="margin-top:0; resize:vertical" placeholder="Bio" ></textarea>
+            
+            <div style="margin-top:3rem;">
+                <a href="/html/landingpage.html" style="cursor:pointer; text-decoration:none; color:#4c8bf5; border:none; padding:0.5rem; border-radius:10px; margin-right:2rem;" onmouseover="this.style.background = 'rgb(238, 238, 238)'" onmouseout="this.style.background = '#ffffff'">Skip</a>
+                <button id="nextbtn1" style="width:5rem; cursor:pointer;">Next</button>
+            </div>
+            
+        </div>
+
+        
+    </div>
+    <!--setting up firebase-->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+    <script src="/js/config.js"></script>
+    <script src="/js/signin.js"></script>
+    <script src="/js/signin_step2.js"></script>
+</body>
+</html>

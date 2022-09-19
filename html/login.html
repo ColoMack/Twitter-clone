@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/syles.css">
+    
+
+    <title>Twitter/Login page</title>
+</head>
+<body>
+    <div class="background">
+        <div class="boxLogin">
+            <img style="height:30px; width:30px;" src="/images/twitterBird(blue).png">
+            <h1 style="margin:0;">Log in to Twitter</h1>
+            <input id="email1" type="text" placeholder="Enter email">
+            <input id="password1" type="password" placeholder="Password">
+            <button style="cursor:pointer;" id="login">Login</button>
+            <div style="display:flex; flex-direction:row; gap:6px; height:fit-content; padding:0; margin:0;">
+                <a style="text-decoration:none; margin:0; cursor:pointer; color:#4c8bf5">Forgot password?</a>
+                <p style="margin:0; color:#4c8bf5">/</p>
+                <a href="/html/index.html" style="text-decoration:none; margin:0; cursor:pointer; color:#4c8bf5">Sign up for Twitter</a>
+            </div>
+        </div>
+    </div>
+    
+    <!--<input id="email1" placeholder="email" type="text">
+    <input id="password1" placeholder="password" type="password">
+    <button id="login">Login</button>-->
+
+    <!--setting up firebase-->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js" ></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+    <script src="/js/config.js"></script>
+    <script src="/js/login.js"></script>
+</body>
+</html>

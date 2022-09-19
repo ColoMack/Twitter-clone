@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <title>Twitter/Profile page</title>
+    <link rel="stylesheet" href="/css/syles.css">
+</head>
+<body>
+    <div style="border:none;" class="mainContainer">
+        <div id="row1">
+            <div style="border:none; border-radius:50%; margin-left:2rem; padding:10px; width:fit-content; align-items:center; justify-content:center; display:flex; flex-direction:row;">
+                <a href="/html/landingpage.html"><img src="/images/twitterBird(blue).png"></a>
+            </div>
+            <div style="border:none; padding:10px; border-radius:25px; margin-left:2rem; width:6.5rem; align-content:center; justify-content:center; display:flex; flex-direction:row;">
+                <a href="/html/landingpage.html"><img src="/images/home.svg">Home</a>
+            </div>
+            <div style="border:none; padding:10px; border-radius:25px; margin-left:2rem; width:7rem; align-content:center; justify-content:center; display:flex; flex-direction:row;">
+                <a><img src="/images/hashtag.svg">Explore</a>
+            </div>
+            <div style="border:none; padding:10px; border-radius:25px; margin-left:2rem; width:9.5rem; align-content:center; justify-content:center; display:flex; flex-direction:row;">
+                <a><img src="/images/bell.svg">Notifications</a>
+            </div>
+            <div style="border:none; padding:10px; border-radius:25px; margin-left:2rem; width:8.5rem; align-content:center; justify-content:center; display:flex; flex-direction:row;">
+                <a><img src="/images/message.svg">Messages</a>
+            </div>
+            <div style="border:none; padding:10px; border-radius:25px; margin-left:2rem; width:8.7rem; align-content:center; justify-content:center; display:flex; flex-direction:row;">
+                <a><img src="/images/bookmark.svg">Bookmarks</a>
+            </div>
+            <div style="border:none; padding:10px; border-radius:25px; margin-left:2rem; width:6rem; align-content:center; justify-content:center; display:flex; flex-direction:row;">
+                <a><img src="/images/listIcon2.svg">Lists</a>
+            </div>
+            <div style="border:none; padding:10px; border-radius:25px; margin-left:2rem; width:7rem; align-content:center; justify-content:center; display:flex; flex-direction:row;">
+                <a><img src="/images/person.svg">Profile</a>
+            </div>
+            <div style="border:none; padding:10px; border-radius:25px; margin-left:2rem; width:6.5rem; align-content:center; justify-content:center; display:flex; flex-direction:row;">
+                <a><img src="/images/threedots(options).svg">More</a>
+            </div>
+            
+            <button style="height:3.5rem; width:15rem; margin-left:2rem; background-color:#4c8bf5; color:#ffffff; font-weight:500; border:none; border-radius:30px;">Tweet</button>
+        </div>
+        <div class="row2">
+            <div style="gap:5%;" class="topbar">
+                <a href="/html/landingpage.html"><img src="/images/back-arrow.svg"></a>
+                <div style="display:flex; flex-direction:column;">
+                    <p style="margin:0;">colo</p>
+                    <p style="margin:0; font-size:70%; font-weight:400;">0 Tweets</p>
+                </div>    
+            </div>
+
+            <div style="display:flex; flex-direction:column;">
+                <div style="border:none; background-color:grey; height:14rem;">
+                    <img style="height:14rem; object-fit:cover; width:100%;" src="/images/leftBackground.png">
+                </div>
+                <div style="display:flex; flex-direction:row;">
+                    <div style="flex-direction:column; border:solid 8px #ffffff; margin-left:1rem; margin-right:0; height:10rem; background-color:#ffffff; display:flex; justify-content:center; align-items:center; width:10rem; border-radius:50%; z-index:100; position:relative; top:-5rem;">
+                        <img src="/images/bell.svg">
+                    </div>
+                    <a data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left:15rem; margin-top:1rem; margin-right:1rem; font-weight:600; border:solid 1px rgb(228, 228, 228); display:flex; align-items:center; justify-content:center; padding:5px; border-radius:20px; cursor:pointer; width:9rem; height:2.2rem; ">Edit Profile</a>
+                </div>
+
+                <!-- Modal for editing the profile...-->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable">
+                      <div class="modal-content">
+                        <div style="border:none;" class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Edit profile</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div style="padding:5px;" class="modal-body editmodal">
+
+                            <!--This is for changing the pprofile photo and the background photo..-->
+                            <div style="border:none; height:14rem;">
+                                <div style="border:none; width:100%; height:10rem;">
+                                    <img src="/images/leftBackground.png" style="object-fit:cover; width:100%; height:100%;">
+                                </div>
+
+                                <div style="border:solid 5px #ffffff; border-radius:50%; height:8rem; width:8rem; top:-5rem; background-color:#ffffff; display:flex; justify-content:center; align-items:center; left:1rem; position:relative;">
+                                    <img style="height:8rem; object-fit:cover; width:8rem;" src="/images/bell.svg">
+                                </div>
+                            </div>
+                            <div class="divedit">
+                                <!--for the username input..-->
+                                <div style="display:flex; margin-top:0.5rem; flex-direction:column; border:solid 1px rgb(210, 210, 210); border-radius:5px; padding-top:0.4rem; padding-bottom:0.4rem; margin-left:0.3rem; margin-right:0.3rem;">
+                                    <label style="font-size:80%; margin-bottom:3px; margin-left:0.4rem;" for="updateUsername">Name</label>
+                                    <input style="border:none; outline:none; height:1.1rem; width:95%; margin-left:0.3rem; " id="updateUsername" type="text" placeholder="Username">
+                                </div>
+
+                                <!--for the bio input..-->
+                                <div style="display:flex; margin-top:0.6rem; flex-direction:column; border:solid 1px rgb(210, 210, 210); border-radius:5px; padding-top:0.4rem; padding-bottom:0.4rem; margin-left:0.3rem; margin-right:0.3rem;">
+                                    <label style="font-size:80%; margin-bottom:3px; margin-left:0.4rem;" for="updateBio">Bio</label>
+                                    <textarea style="border:none; outline:none; width:95%; margin-left:0.3rem;"  rows="2" id="updateBio" ></textarea>
+                                </div>
+
+                                <!--for the location input..-->
+                                <div style="display:flex; margin-top:0.6rem; flex-direction:column; border:solid 1px rgb(210, 210, 210); border-radius:5px; padding-top:0.4rem; padding-bottom:0.4rem; margin-left:0.3rem; margin-right:0.3rem;">
+                                    <label style="font-size:80%; margin-bottom:3px; margin-left:0.4rem;" for="updateLocation">Location</label>
+                                    <input style="border:none; outline:none; height:1.1rem; width:95%; margin-left:0.3rem;" id="updateLocation" type="text" placeholder="Location">
+                                </div>
+
+                                <!--for the website input..-->
+                                <div style="display:flex; margin-top:0.6rem; flex-direction:column; border:solid 1px rgb(210, 210, 210); border-radius:5px; padding-top:0.4rem; padding-bottom:0.4rem; margin-left:0.3rem; margin-right:0.3rem;">
+                                    <label style="font-size:80%; margin-bottom:3px; margin-left:0.4rem;" for="updateWebsite">Website</label>
+                                    <input style="border:none; outline:none; height:1.1rem; width:95%; margin-left:0.3rem;" id="updateWebsite" type="text" placeholder="Website">
+                                </div>
+
+                                <!--for changing the date of birth-->
+                                <div style="display:flex; flex-direction:row; gap:0.5rem; margin-left:7px; margin-top:1rem;">
+                                    <p style="margin:0;">Birth date</p>
+                                    <a href="">Edit</a>
+                                </div>
+
+                                <!--for switching to a profssional account-->
+                                <div style="display:flex; border:none; border-radius:5px; padding-left:5px; padding-top:0.7rem; padding-bottom:0.7rem; flex-direction:row; margin-left:4px; margin-top:1rem;" onmouseover="this.style.background = 'rgb(238,238,238)'" onmouseout="this.style.background ='#ffffff'">
+                                    <a style="width:100%; height:100%; cursor:pointer;">Switch to professional<svg style="width:20px; height:20px; margin-left:17rem;" viewBox="0 0 24 24" aria-hidden="true" class="r-14j79pv r-4qtqp9 r-yyyyoo r-1q142lx r-1xvli5t r-dnmrzs r-f727ji r-bnwqim r-1plcrui r-lrvibr"><g><path d="M17.207 11.293l-7.5-7.5c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414L15.086 12l-6.793 6.793c-.39.39-.39 1.023 0 1.414.195.195.45.293.707.293s.512-.098.707-.293l7.5-7.5c.39-.39.39-1.023 0-1.414z"></path></g></svg></a>
+                                </div>
+                            </div>
+                            
+                          
+                        </div>
+                        <div style="border:none;" class="modal-footer">
+                          
+                            <button style="background-color:black; border-radius:20px; border:none;" type="button" class="btn btn-primary">Save</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+            
+        <div class="row3"></div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+    <script src="/js/config.js"></script>
+    <script src="/js/home.js"></script>
+    <script src="/js/profile.js"></script>
+</body>
+</html>

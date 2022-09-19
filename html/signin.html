@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/syles.css">
+    <title>Twitter/Signup page</title>
+</head>
+<body>
+    <div class="background">
+        <div style="gap:1.5rem; margin-top:1.5%;" class="boxLogin">
+            <div style="margin:0; margin-right:14rem; gap:1rem; display:flex; align-items:center; flex-direction:row; width:10rem; border:none">
+                <a href="/html/index.html"><svg style="width:20px; cursor:pointer; height:20px;" viewBox="0 0 24 24" aria-hidden="true" class="r-18jsvk2 r-4qtqp9 r-yyyyoo r-z80fyv r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-19wmn03"><g><path d="M13.414 12l5.793-5.793c.39-.39.39-1.023 0-1.414s-1.023-.39-1.414 0L12 10.586 6.207 4.793c-.39-.39-1.023-.39-1.414 0s-.39 1.023 0 1.414L10.586 12l-5.793 5.793c-.39.39-.39 1.023 0 1.414.195.195.45.293.707.293s.512-.098.707-.293L12 13.414l5.793 5.793c.195.195.45.293.707.293s.512-.098.707-.293c.39-.39.39-1.023 0-1.414L13.414 12z"></path></g></svg></a>
+                <p style="font-size:130%; font-weight:500;">Step 1 of 3</p>
+            </div>
+            <a style="cursor:pointer;" href="/html/index.html"><img style="height:30px; width:30px;" src="/images/twitterBird(blue).png"></a>
+            <h1 style="margin:0;">Create an account</h1>
+            <label></label>
+            <input id="fullname" type="text" placeholder="Name">
+            <label style="color:#c6c6c6; font-size:60%; font-weight:500; margin-right:7rem; margin-top:-1.2rem;" for="fullname">*Will be used as your identity for your account.</label>
+            <input id="username" type="text" placeholder="New username">
+            <label style="color:#c6c6c6; font-size:60%; font-weight:500; margin-right:7rem; margin-top:-1.2rem;" for="username">Eg: Tom_254. Will be displayed as @Tom_254.</label>
+            <input id="email" type="text" placeholder="Email address">
+            <input id="password" type="password" placeholder="New Password">
+            <input id="DOB" type="date" >
+            <button style="cursor:pointer;" onclick="window.location.href = 'signin(step2).html'" id="signup">Sign up</button>
+
+            <div style="display:flex; flex-direction:row; gap:6px; height:fit-content; padding:0; margin:0;">
+                <a href="/html/login.html" style="text-decoration:none; margin:0; cursor:pointer; color:#4c8bf5">Already have a Twitter account?</a>
+            </div>
+        </div>
+        
+        <!--<div class="modalgoogle">
+            <img class="img1" src="/images/twitterBird(black).svg">
+            <img class="img2" src="/images/googleLogo.svg">
+            
+            <p class="p1">Sign in</p>
+            <p class="p2">Use your Google Account</p>
+
+            <input id="email" class="input1" type="text" placeholder="Enter Email">
+            <input id="password" class="input2" type="password" placeholder="Enter Password">
+
+            <a style="color: black;" href="">Forgot email?</a>
+
+            <button id="register" class="next">Next</button>
+            
+        </div>-->
+    </div>
+    <!--setting up firebase-->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+    <script src="/js/config.js"></script>
+    <script src="/js/signin.js"></script>
+</body>
+</html>
