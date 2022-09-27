@@ -51,7 +51,7 @@ firebase.auth().onAuthStateChanged((user)=>{
                        let tweetID = doc.data().thetweetID;
                        let tweetLikes = doc.data().thetweetlikes;
 
-                       console.log(post);
+                       
 
                        if(theuserid == theid){
 

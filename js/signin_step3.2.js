@@ -15,7 +15,7 @@ firebase.auth().onAuthStateChanged((user)=>{
             uploadtaskbackground.on('state_changed', (snapshot)=>{
 
                 let uploadprogressdecimal = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-                let uploadprogress = Math.round(uploadprogressdecimal);
+                let uploadprogress = Math.trunc(uploadprogressdecimal);
                 console.log("backgroundpic" + " " + uploadprogress);
             },(error)=>{
 
